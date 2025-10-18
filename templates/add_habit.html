@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker - Add Habit</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="add-habit">
+            <h2>Add a New Habit</h2>
+            <form id="addHabitForm" action="#" method="POST">
+                <label for="habitName">Habit Name:</label>
+                <input type="text" id="habitName" name="habit_name" placeholder="Enter habit name" required>
+
+                <label for="goalDays">Goal (in days):</label>
+                <input type="number" id="goalDays" name="goal_days" placeholder="e.g., 7" min="1" required>
+
+                <label for="category">Category (Optional):</label>
+                <input type="text" id="category" name="category" placeholder="e.g., Fitness, Study">
+
+                <button type="submit" class="btn">Add Habit</button>
+            </form>
+
+            <!-- Placeholder for messages (success/error) -->
+            <div id="message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Habit Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
