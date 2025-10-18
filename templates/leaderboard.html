@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker - Leaderboard</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="add_habit.html">Add Habit</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="leaderboard">
+            <h2>Leaderboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Habit Name</th>
+                        <th>Streak</th>
+                        <th>Reward Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Exercise</td>
+                        <td>10 days</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Reading</td>
+                        <td>7 days</td>
+                        <td>35</td>
+                    </tr>
+                    <!-- Backend will dynamically populate rows -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Habit Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
