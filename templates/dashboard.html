@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker - Dashboard</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add_habit.html">Add Habit</a>
+            <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Your Habits</h2>
+            
+            <!-- Placeholder for habit cards -->
+            <div class="habit-list">
+                <div class="habit-card">
+                    <h3>Read 30 mins</h3>
+                    <p>Streak: 3 days</p>
+                    <button class="mark-done-btn">Mark Done</button>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+
+                <div class="habit-card">
+                    <h3>Exercise</h3>
+                    <p>Streak: 5 days</p>
+                    <button class="mark-done-btn">Mark Done</button>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+
+                <!-- Backend will dynamically populate more habit cards here -->
+            </div>
+
+            <section class="rewards">
+                <h2>Your Rewards</h2>
+                <div class="reward-list">
+                    <div class="reward-card">
+                        <p>Completed 5-day streak: Badge Earned!</p>
+                    </div>
+                    <!-- Backend will fill more rewards -->
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Habit Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
